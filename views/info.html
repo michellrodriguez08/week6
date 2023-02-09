@@ -30,6 +30,15 @@
         <label><input type="radio" name="color" value="{{ @color }}">{{ ucfirst(@color) }}</label>
     </repeat>
 
+    <h4>Cupcakes</h4>
+    <repeat group="{{ @cupcakes }}" key="{{ @key }}" value="{{ @cupcake }}">
+        <label><input type="checkbox" name="flavors[]" value="{{ @key }}">{{ @cupcake }}</label>
+    </repeat>
+
+    <check if="{{ @age > 30}}">
+        <true><p>You are mature</p></true>
+        <false><p>You are a spring chicken</p></false>
+    </check>
 
 </body>
 </html>

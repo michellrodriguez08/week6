@@ -35,11 +35,13 @@ $f3->route('GET /', function($f3) {
     $cupcakes = array("chocolate"=>"Chocolate Ganache", "strawberry"=>"Strawberry
     Shortcake", "maple"=>"Maple Walnut");
     //the ones in grey are key and the green "" is the value
-    $f3->set('cupcakes', $cupcakes['strawberry']);
+    $f3->set('cupcakes', $cupcakes);
 
     //Add a variable that stores your age
+    $f3->set('age', 25);
 
-    //In the view page, if age is over 30, print "You are mature. Otherwise print,
+
+    //In the view page, if age is over 30, print "You are mature". Otherwise print,
     //"You are a spring chicken"
 
 
